@@ -7,3 +7,5 @@ build/
 lv2.h
 manifest.ttl
 debian
+
+venv
