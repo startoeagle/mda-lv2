@@ -3,6 +3,8 @@ import os
 import re
 from waflib.extras import autowaf
 
+import pathlib
+
 MDA_VERSION = "1.1.0"
 
 # Mandatory waf variables
@@ -122,6 +124,8 @@ def build(bld):
 
         try:
             build_(p)
-        except:
-            pass
+        except Exception as e:
+            print("Got an error")
+            print(e)
+            raise e
 
