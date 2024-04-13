@@ -45,7 +45,6 @@ foreach plugin_name : plugins
   plugin_header = 'src/mda' + plugin_name + '.h'
   plugin_class_name = 'mda' + plugin_name
 
-  message(plugin_name, plugin_class_name, plugin_source, plugin_header)
   static_library(
     plugin_class_name,
     [
