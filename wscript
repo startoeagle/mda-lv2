@@ -3,8 +3,6 @@ import os
 import re
 from waflib.extras import autowaf
 
-import pathlib
-
 MDA_VERSION = "1.1.0"
 
 # Mandatory waf variables
