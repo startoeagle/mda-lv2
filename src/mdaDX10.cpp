@@ -21,7 +21,6 @@
 #include "lv2/lv2plug.in/ns/ext/atom/util.h"
 
 #include <stdio.h>
-#include <stdlib.h> //rand()
 #include <math.h>
 
 AudioEffect *createEffectInstance(audioMasterCallback audioMaster)

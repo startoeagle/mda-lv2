@@ -16,7 +16,6 @@
   along with this software. If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <cassert>
 #include <fstream>
 #include <iostream>
 #include <list>
