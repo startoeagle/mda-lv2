@@ -8,4 +8,5 @@ lv2.h
 manifest.ttl
 debian
 
+.cache/
 venv
