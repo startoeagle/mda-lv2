@@ -4,6 +4,5 @@ all:
 	python create_manifest.py
 
 install: all
-	cp -r build/bundles "${HOME}/.lv2"
-
+	cp -r build/bundles/* "${HOME}/.lv2"
 

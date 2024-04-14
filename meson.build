@@ -58,7 +58,6 @@ foreach plugin_name : plugins
       '-DPLUGIN_URI_SUFFIX="' + plugin_class_name + '"',
       '-DPLUGIN_HEADER="' + plugin_header + '"',
     ],
-    install: true,
     name_prefix: '', # Remove 'lib' prefix
   )
 
