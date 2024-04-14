@@ -55,7 +55,7 @@ foreach plugin_name : plugins
     cpp_args: [
       '-DPLUGIN_CLASS=' + plugin_class_name,
       '-DURI_PREFIX="http://moddevices.com/plugins/mda/"',
-      '-DPLUGIN_URI_SUFFIX="' + plugin_class_name + '"',
+      '-DPLUGIN_URI_SUFFIX="' + plugin_name + '"',
       '-DPLUGIN_HEADER="' + plugin_header + '"',
     ],
     name_prefix: '', # Remove 'lib' prefix
