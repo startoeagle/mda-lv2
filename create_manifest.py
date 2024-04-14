@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 
 build_dir = Path("build/")
+build_bundles_dir = build_dir / "bundles"
 
 
 def copy_and_log(input: Path, output: Path):
@@ -51,7 +52,7 @@ bundles = [
 for bundle_name in bundles:
     print(f"Operating on {bundle_name}")
     bundle_input_dir = Path(f"bundles/mod-mda-{bundle_name}.lv2/")
-    bundle_output_dir = build_dir / bundle_name
+    bundle_output_dir = build_bundles_dir / bundle_name
 
     bundle_output_dir.mkdir(parents=True, exist_ok=True)
     print(f"\tCreating directory {bundle_output_dir}")
